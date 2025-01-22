@@ -1,0 +1,267 @@
+.icon{
+    @mixin iconSize($size){
+        width: $size;
+        height: $size;
+        background-size:cover ;
+    }
+    &-L{
+        $size: 25px;
+
+        &.white{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $subWhite , 2px);
+            }
+        }
+        &.dark{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $baseBlue , 2px);
+            }
+        }
+        &.light{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $baseOrange , 2px);
+            }
+        }
+    }
+    &-M{
+        $size: 20px;
+
+        &.white{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/white/icon (L)=W, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $subWhite , 2px);
+            }
+        }
+        &.dark{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/dark/icon (L)=Dark, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $baseBlue , 2px);
+            }
+        }
+        &.light{
+            &-save{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=save.png');
+            }
+            &-arrow{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=arrow.png');
+            }
+            &-check{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=check.png');
+            }
+            &-edit{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=edit.png');
+            }
+            &-upload{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=upload.png');
+            }
+            &-view{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=view.png');
+            }
+            &-pen{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=pen.png');
+            }
+            &-plus{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=plus.png');
+            }
+            &-setting{
+                @include iconSize($size);
+                background-image: url('/img/icon/light/icon (L)=light, style=setting.png');
+            }
+            &-cross{
+                @include cross( $size , $baseOrange , 2px);
+            }
+        }
+    }
+}
+
+.cross{
+    @include cross( 25px, $baseOrange , 2px);
+}
+
+

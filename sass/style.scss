@@ -1,0 +1,52 @@
+@use "sass:map";
+
+// CSS import
+// @import url(about.css);
+
+// sass import
+// base 
+@import 'base/color';
+@import 'base/font';
+@import 'base/var';
+@import 'base/reset';
+
+// mixin
+@import 'mixin/mixin';
+
+// component
+@import 'component/btn';
+@import 'component/icon';
+@import 'component/form';
+@import 'component/table';
+@import 'component/_sidebar';
+
+
+// layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// page
+@import 'page/index';
+@import 'page/about';
+@import 'page/create';
+
+
+.warrper{
+    max-width: 1440px;
+    width: 100%;
+    @include warrperBgc();
+    padding: 5px;
+    border: $baseBlue 10px solid;
+}
+.button{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .iconBag{
+        display: flex; 
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+

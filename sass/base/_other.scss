@@ -1,0 +1,19 @@
+$fontSize:16px; //數值
+$fontFamily: 'Courier New', Courier, monospace; //字串
+$fontColor: #fff; //顏色
+$bgc: #d61818; //顏色
+$marginList: 10px auto 20px; //list
+$fullwidth: ture; //布林
+$number : null; //空值
+$title:(
+    key:value,
+); //map
+
+body{
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    background-color: $bgc;
+    color: $fontColor;
+    display: flex;
+    margin:$marginList ;
+}

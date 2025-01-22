@@ -1,0 +1,119 @@
+/* ----- Key Btn ---- */
+.btnKey{
+    &-L{
+        font-size: 28px;
+        &.glow{
+            &-dark{
+                @include keybtn($baseBlue, false);
+                color: $subWhite;
+                box-shadow: 0px 0px 20px 0px rgba($baseBlue, 0.60);
+                transition: all .3s ease;
+                &:hover{
+                    background-color: $subBlue;
+                    color: $subWhite;
+                }
+            }
+            &-light{
+                @include keybtn($baseOrange, false);
+                color: $subWhite;
+                transition: all .3s ease;
+                box-shadow: 0px 0px 20px 0px rgba($baseOrange, 0.60);
+                &:hover{
+                    background-color: $subOrange;
+                    color: $subWhite;
+                }
+            }
+        }
+        &.noGlow{
+            &-dark{
+                @include keybtn($baseBlue, ture);
+                color: $baseBlue;
+                transition: all .3s ease;
+                &:hover{
+                    box-shadow: 0px 0px 20px 0px rgba($baseBlue, 0.60);
+                }
+            }
+            &-light{
+                @include keybtn($baseOrange, ture);
+                color: $baseOrange;
+                transition: all .3s ease;
+                &:hover{
+                    box-shadow: 0px 0px 20px 0px rgba($baseOrange, 0.60);
+                    color: $baseOrange;
+                }
+            }
+            &-none{
+                @include keybtn($subDark-gray, false);
+                color: $subGray;
+            } 
+        }
+    }
+    &-M{
+        font-size: 20px;
+        &.glow{
+            &-dark{
+                @include keybtn($baseBlue, false);
+                color: $subWhite;
+                box-shadow: 0px 0px 20px 0px rgba($baseBlue, 0.60);
+                transition: all .3s ease;
+                &:hover{
+                    background-color: $subBlue;
+                    color: $subWhite;
+                }
+            }
+            &-light{
+                @include keybtn($baseOrange, false);
+                color: $subWhite;
+                transition: all .3s ease;
+                box-shadow: 0px 0px 20px 0px rgba($baseOrange, 0.60);
+                &:hover{
+                    background-color: $subOrange;
+                    color: $subWhite;
+                }
+            }
+        }
+        &.noGlow{
+            &-dark{
+                @include keybtn($baseBlue, ture);
+                color: $baseBlue;
+                transition: all .3s ease;
+                &:hover{
+                    box-shadow: 0px 0px 20px 0px rgba($baseBlue, 0.60);
+                }
+            }
+            &-light{
+                @include keybtn($baseOrange, ture);
+                color: $baseOrange;
+                transition: all .3s ease;
+                &:hover{
+                    box-shadow: 0px 0px 20px 0px rgba($baseOrange, 0.60);
+                    color: $baseOrange;
+                }
+            }
+            &-none{
+                @include keybtn($subDark-gray, false);
+                color: $subGray;
+            } 
+        }
+    }
+}
+
+/* ----- Link Btn ---- */
+.btnLink{
+    &-L{
+        font-size: 24px;
+        &.dark{ @include normalBtn($baseBlue) }
+        &.light{ @include normalBtn($baseOrange) }
+        &.white{ @include normalBtn($subWhite) }
+    }
+    &-M{
+        font-size: 20px;
+        &.dark{ @include normalBtn($baseBlue) }
+        &.light{ @include normalBtn($baseOrange) }
+        &.white{ @include normalBtn($subWhite) }
+    }
+}
+
+
+
+
