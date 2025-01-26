@@ -1,267 +1,116 @@
-.icon{
-    @mixin iconSize($size){
-        width: $size;
-        height: $size;
-        background-size:cover ;
+// 標準尺寸
+// L : 25px ; M :20px
+.icon-L{
+    $size:25px;
+    .white{
+        &-save{@include save('white',$size)};
+        &-arrow{@include arrow('white',$size)};
+        &-check{@include check('white',$size)};
+        &-edit{@include edit('white',$size)};
+        &-upload{@include upload('white',$size)};
+        &-view{@include view('white',$size)};
+        &-pen{@include pen('white',$size)};
+        &-plus{@include plus('white',$size)};
+        &-setting{@include setting('white',$size)};
+        &-cross{@include cross( $size , $subWhite , 2px)}
     }
-    &-L{
-        $size: 25px;
-
-        &.white{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $subWhite , 2px);
-            }
-        }
-        &.dark{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $baseBlue , 2px);
-            }
-        }
-        &.light{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $baseOrange , 2px);
-            }
-        }
+    .dark{
+        &-save{@include save('dark',$size)};
+        &-arrow{@include arrow('dark',$size)};
+        &-check{@include check('dark',$size)};
+        &-edit{@include edit('dark',$size)};
+        &-upload{@include upload('dark',$size)};
+        &-view{@include view('dark',$size)};
+        &-pen{@include pen('dark',$size)};
+        &-plus{@include plus('dark',$size)};
+        &-setting{@include setting('dark',$size)};
+        &-cross{@include cross( $size , $baseBlue , 2px)}
     }
-    &-M{
-        $size: 20px;
-
-        &.white{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/white/icon (L)=W, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $subWhite , 2px);
-            }
-        }
-        &.dark{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/dark/icon (L)=Dark, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $baseBlue , 2px);
-            }
-        }
-        &.light{
-            &-save{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=save.png');
-            }
-            &-arrow{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=arrow.png');
-            }
-            &-check{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=check.png');
-            }
-            &-edit{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=edit.png');
-            }
-            &-upload{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=upload.png');
-            }
-            &-view{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=view.png');
-            }
-            &-pen{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=pen.png');
-            }
-            &-plus{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=plus.png');
-            }
-            &-setting{
-                @include iconSize($size);
-                background-image: url('/img/icon/light/icon (L)=light, style=setting.png');
-            }
-            &-cross{
-                @include cross( $size , $baseOrange , 2px);
-            }
-        }
+    .light{
+        &-save{@include save('light',$size)};
+        &-arrow{@include arrow('light',$size)};
+        &-check{@include check('light',$size)};
+        &-edit{@include edit('light',$size)};
+        &-upload{@include upload('light',$size)};
+        &-view{@include view('light',$size)};
+        &-pen{@include pen('light',$size)};
+        &-plus{@include plus('light',$size)};
+        &-setting{@include setting('light',$size)};
+        &-cross{@include cross( $size , $baseOrange , 2px)}
+    }
+    .gray{
+        &-save{@include save('gray',$size)};
+        &-arrow{@include arrow('gray',$size)};
+        &-check{@include check('gray',$size)};
+        &-edit{@include edit('gray',$size)};
+        &-upload{@include upload('gray',$size)};
+        &-view{@include view('gray',$size)};
+        &-pen{@include pen('gray',$size)};
+        &-plus{@include plus('gray',$size)};
+        &-setting{@include setting('gray',$size)};
+        &-cross{@include cross( $size , $subGray , 2px)}
+    }
+}
+.icon-M{
+    $size:20px;
+    .white{
+        &-save{@include save('white',$size)};
+        &-arrow{@include arrow('white',$size)};
+        &-check{@include check('white',$size)};
+        &-edit{@include edit('white',$size)};
+        &-upload{@include upload('white',$size)};
+        &-view{@include view('white',$size)};
+        &-pen{@include pen('white',$size)};
+        &-plus{@include plus('white',$size)};
+        &-setting{@include setting('white',$size)};
+        &-cross{@include cross( $size , $subWhite , 2px)}
+    }
+    .dark{
+        &-save{@include save('dark',$size)};
+        &-arrow{@include arrow('dark',$size)};
+        &-check{@include check('dark',$size)};
+        &-edit{@include edit('dark',$size)};
+        &-upload{@include upload('dark',$size)};
+        &-view{@include view('dark',$size)};
+        &-pen{@include pen('dark',$size)};
+        &-plus{@include plus('dark',$size)};
+        &-setting{@include setting('dark',$size)};
+        &-cross{@include cross( $size , $baseBlue , 2px)}
+    }
+    .light{
+        &-save{@include save('light',$size)};
+        &-arrow{@include arrow('light',$size)};
+        &-check{@include check('light',$size)};
+        &-edit{@include edit('light',$size)};
+        &-upload{@include upload('light',$size)};
+        &-view{@include view('light',$size)};
+        &-pen{@include pen('light',$size)};
+        &-plus{@include plus('light',$size)};
+        &-setting{@include setting('light',$size)};
+        &-cross{@include cross( $size , $baseOrange , 2px)}
+    }
+    .gray{
+        &-save{@include save('gray',$size)};
+        &-arrow{@include arrow('gray',$size)};
+        &-check{@include check('gray',$size)};
+        &-edit{@include edit('gray',$size)};
+        &-upload{@include upload('gray',$size)};
+        &-view{@include view('gray',$size)};
+        &-pen{@include pen('gray',$size)};
+        &-plus{@include plus('gray',$size)};
+        &-setting{@include setting('gray',$size)};
+        &-cross{@include cross( $size , $subGray , 2px)}
     }
 }
 
-.cross{
-    @include cross( 25px, $baseOrange , 2px);
-}
-
+// 其他尺寸 (請寫在自己的頁面)
+// 外層建議再包一個 div (自行命名),避免內部標籤不見!  
+// 內層 icon class 命名方式 : 顏色-圖形名
+// 如有其他地方需要使用 icon 注意內部包含的標籤不要掉
+// .i{                                   //外層div(自行命名)
+//      自定樣式.....
+//     .dark-save{                      //顏色-樣式
+//         @include save('dark',20px);  // @ include 樣式名('顏色:white、dark、light、gray',$size)
+//     }
+// }
 
