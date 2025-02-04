@@ -26,9 +26,11 @@
 @import 'layout/footer';
 
 // page
-@import 'page/index';
 @import 'page/btnFmaily';
-@import 'page/create';
+@import 'page/icongroup';
+@import 'page/index';
+@import 'page/releasedPage';
+@import 'page/createNewPj';
 
 
 .warrper{
@@ -37,5 +39,6 @@
     @include warrperBgc();
     padding: 5px;
     border: $baseBlue 10px solid;
+    position: relative;
 }
 

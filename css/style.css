@@ -1450,146 +1450,6 @@ h1, h2, h3, h4, p {
   background-color: #F9FAF9;
 }
 
-.CreateProject {
-  width: 100%;
-  display: flex;
-}
-
-.mainContent {
-  width: 100%;
-  margin: 0px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.createFunction {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.createFunction .fileSearch {
-  display: flex;
-  justify-content: space-around;
-  max-width: calc(100% - 200px);
-  width: 100%;
-  border-bottom: #153243 solid 1px;
-  align-items: center;
-}
-.createFunction .fileSearch input {
-  all: initial;
-  width: inherit;
-}
-
-.RecentFile {
-  display: flex;
-  flex-direction: column;
-}
-.RecentFile .TitleAndView {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.RecentFile .TitleAndView .viewmode {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-}
-.RecentFile .TitleAndView .viewmode .img {
-  width: 25px;
-  height: 25px;
-  background-color: #DEE2E6;
-}
-
-.AllFile {
-  display: flex;
-  flex-direction: column;
-}
-.AllFile .itemTitle {
-  margin-top: 50px;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: #153243 solid 1px;
-}
-.AllFile .itemTitle .title-time {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.fileGroup {
-  max-width: 970px;
-  width: 100%;
-  margin: 30px;
-  width: auto;
-  display: flex;
-  justify-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-.fileGroup-line {
-  margin-left: 0px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.PortfolioCard {
-  max-width: 200px;
-  width: 100%;
-  border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  overflow: hidden;
-}
-.PortfolioCard .img {
-  width: 200px;
-  height: 150px;
-  background-color: #DEE2E6;
-}
-.PortfolioCard .info {
-  width: 100%;
-  padding: 10px;
-  background-color: #F9FAF9;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.PortfolioCard li {
-  font-size: 12px;
-}
-
-.PortfolioLine {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-bottom: #999999 solid 1px;
-}
-.PortfolioLine .img {
-  width: 50px;
-  height: 50px;
-  background-color: #153243;
-}
-.PortfolioLine .info-title {
-  max-width: calc(100% - 300px);
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-.PortfolioLine .info-time {
-  width: 250px;
-  display: flex;
-  justify-content: end;
-}
-
 .content {
   border: #153243 solid;
   padding: 10px;
@@ -1843,6 +1703,321 @@ header {
   display: none;
 }
 
+.CreateProject {
+  width: 100%;
+  display: flex;
+}
+
+.mainContent {
+  width: 100%;
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.createFunction {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.createFunction .fileSearch {
+  display: flex;
+  justify-content: space-around;
+  max-width: calc(100% - 200px);
+  width: 100%;
+  border-bottom: #153243 solid 1px;
+  align-items: center;
+}
+.createFunction .fileSearch input {
+  all: initial;
+  width: inherit;
+}
+.createFunction .fileSearch input::placeholder {
+  color: rgba(21, 50, 67, 0.5);
+  font-size: 20px;
+}
+
+.RecentFile {
+  display: flex;
+  flex-direction: column;
+}
+.RecentFile .TitleAndView {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RecentFile .TitleAndView .viewmode {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.RecentFile .TitleAndView .viewmode .img {
+  width: 25px;
+  height: 25px;
+  background-color: #DEE2E6;
+}
+
+.AllFile {
+  display: flex;
+  flex-direction: column;
+}
+.AllFile .itemTitle {
+  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #153243 solid 1px;
+}
+.AllFile .itemTitle .title-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fileGroup {
+  max-width: 970px;
+  width: 100%;
+  margin: 30px;
+  width: auto;
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.fileGroup-line {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.PortfolioCard {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+}
+.PortfolioCard .img {
+  width: 200px;
+  height: 150px;
+  background-color: #DEE2E6;
+}
+.PortfolioCard .info {
+  width: 100%;
+  padding: 10px;
+  background-color: #F9FAF9;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.PortfolioCard li {
+  font-size: 12px;
+}
+
+.PortfolioLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: #999999 solid 1px;
+}
+.PortfolioLine .img {
+  width: 50px;
+  height: 50px;
+  background-color: #153243;
+}
+.PortfolioLine .info-title {
+  max-width: calc(100% - 300px);
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.PortfolioLine .info-time {
+  width: 250px;
+  display: flex;
+  justify-content: end;
+}
+
+.ReleasedPage {
+  width: 100%;
+  display: flex;
+}
+.ReleasedPage .mainContent {
+  width: 100%;
+  margin: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ReleasedPage .searchFunction {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+  border-bottom: #153243 solid 1px;
+  align-items: center;
+}
+.ReleasedPage .searchFunction input {
+  all: initial;
+  width: inherit;
+}
+.ReleasedPage .searchFunction input::placeholder {
+  color: rgba(21, 50, 67, 0.5);
+  font-size: 20px;
+}
+.ReleasedPage .RecentFile {
+  display: flex;
+  flex-direction: column;
+}
+.ReleasedPage .RecentFile .TitleAndView {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ReleasedPage .RecentFile .TitleAndView .viewmode {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.ReleasedPage .RecentFile .TitleAndView .viewmode .img {
+  width: 25px;
+  height: 25px;
+  background-color: #DEE2E6;
+}
+.ReleasedPage .AllFile {
+  display: flex;
+  flex-direction: column;
+}
+.ReleasedPage .AllFile .itemTitle {
+  margin-top: 50px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #153243 solid 1px;
+}
+.ReleasedPage .AllFile .itemTitle .title-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ReleasedPage .fileGroup {
+  max-width: 970px;
+  width: 100%;
+  margin: 30px;
+  width: auto;
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.ReleasedPage .fileGroup-line {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ReleasedPage .PortfolioCard {
+  max-width: 200px;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+}
+.ReleasedPage .PortfolioCard .img {
+  width: 200px;
+  height: 150px;
+  background-color: #DEE2E6;
+}
+.ReleasedPage .PortfolioCard .info {
+  width: 100%;
+  padding: 10px;
+  background-color: #F9FAF9;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ReleasedPage .PortfolioCard li {
+  font-size: 12px;
+}
+.ReleasedPage .PortfolioLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: #999999 solid 1px;
+}
+.ReleasedPage .PortfolioLine .img {
+  width: 50px;
+  height: 50px;
+  background-color: #153243;
+}
+.ReleasedPage .PortfolioLine .info-title {
+  max-width: calc(100% - 300px);
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.ReleasedPage .PortfolioLine .info-time {
+  width: 250px;
+  display: flex;
+  justify-content: end;
+}
+
+.FullScreenModal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(249, 250, 249, 0.95);
+  border: #153243 solid 10px;
+}
+.FullScreenModal .model-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 80px;
+  gap: 30px;
+}
+.FullScreenModal .model-content .project {
+  top: 40px;
+  width: 50%;
+  height: 450px;
+  background-color: #F9FAF9;
+  border-radius: 2%;
+  box-shadow: 0px 4px 30px 0px rgba(21, 50, 67, 0.6);
+}
+.FullScreenModal .model-content input {
+  all: initial;
+  width: 400px;
+  padding: 10px;
+  border-bottom: #153243 solid 1px;
+  text-align: center;
+}
+.FullScreenModal .model-content input::placeholder {
+  color: rgba(21, 50, 67, 0.5);
+  font-size: 20px;
+}
+
 .warrper {
   max-width: 1440px;
   width: 100%;
@@ -1854,4 +2029,5 @@ header {
   background-blend-mode: soft-light;
   padding: 5px;
   border: #153243 10px solid;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

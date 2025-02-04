@@ -1,0 +1,137 @@
+.ReleasedPage{
+    width: 100%;
+    display: flex;
+    .mainContent{
+        width: 100%;
+        margin: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    // 
+    .searchFunction{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        padding: 10px;
+        width: 100%;
+        border-bottom: $baseBlue solid 1px;
+        align-items: center;
+        input{
+            all: initial;
+            width: inherit;
+        }
+        input::placeholder {
+            color:  rgb(21, 50, 67,50%);
+            font-size: 20px;
+        }
+    }
+    // 
+    .RecentFile{
+        display: flex;
+        flex-direction: column;
+        .TitleAndView{
+            margin-top: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .viewmode{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                padding: 10px;
+                .img{
+                    width: 25px;
+                    height: 25px;
+                    background-color: $subGray;
+                }
+            }
+        }
+    }
+    // 
+    .AllFile{
+        display: flex;
+        flex-direction: column;
+        .itemTitle{
+            margin-top: 50px;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: $baseBlue solid 1px;
+            .title-time{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+    // 
+    .fileGroup{
+        max-width: 970px;
+        width: 100%;
+        margin: 30px;
+        width: auto;
+        display: flex;
+        justify-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        &-line{
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    // PortfolioCard
+    .PortfolioCard{
+        max-width: 200px;
+        width: 100%;
+        border-radius: 5%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        overflow: hidden;
+        .img{
+            width: 200px;
+            height: 150px;
+            background-color: $subGray;
+        }
+        .info{
+            width: 100%;
+            padding: 10px;
+            background-color: $subWhite;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        li{
+            font-size: 12px;
+        }
+    }
+    .PortfolioLine{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: $subDark-gray solid 1px;
+        .img{
+            width: 50px;
+            height: 50px;
+            background-color: $baseBlue;
+        }
+        .info-title{
+            max-width: calc(100% - 300px);
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .info-time{
+            width: 250px;
+            display: flex;
+            justify-content: end;
+        }
+
+    }
+}

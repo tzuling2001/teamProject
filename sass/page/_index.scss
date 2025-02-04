@@ -26,6 +26,10 @@
             all: initial;
             width: inherit;
         }
+        input::placeholder {
+            color:  rgb(21, 50, 67,50%);
+            font-size: 20px;
+          }
     }
 }
 // 
