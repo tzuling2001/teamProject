@@ -12,6 +12,8 @@
         &-pen{@include pen('white',$size)};
         &-plus{@include plus('white',$size)};
         &-setting{@include setting('white',$size)};
+        &-singleArrow{@include singleArrow('white',$size)};
+        &-search{@include search('white',$size)};
         &-cross{@include cross( $size , $subWhite , 2px)}
     }
     .dark{
@@ -24,6 +26,8 @@
         &-pen{@include pen('dark',$size)};
         &-plus{@include plus('dark',$size)};
         &-setting{@include setting('dark',$size)};
+        &-singleArrow{@include singleArrow('dark',$size)};
+        &-search{@include search('dark',$size)};
         &-cross{@include cross( $size , $baseBlue , 2px)}
     }
     .light{
@@ -36,6 +40,8 @@
         &-pen{@include pen('light',$size)};
         &-plus{@include plus('light',$size)};
         &-setting{@include setting('light',$size)};
+        &-singleArrow{@include singleArrow('light',$size)};
+        &-search{@include search('light',$size)};
         &-cross{@include cross( $size , $baseOrange , 2px)}
     }
     .gray{
@@ -48,6 +54,8 @@
         &-pen{@include pen('gray',$size)};
         &-plus{@include plus('gray',$size)};
         &-setting{@include setting('gray',$size)};
+        &-singleArrow{@include singleArrow('gray',$size)};
+        &-search{@include search('gray',$size)};
         &-cross{@include cross( $size , $subGray , 2px)}
     }
 }
@@ -63,6 +71,8 @@
         &-pen{@include pen('white',$size)};
         &-plus{@include plus('white',$size)};
         &-setting{@include setting('white',$size)};
+        &-singleArrow{@include singleArrow('white',$size)};
+        &-search{@include search('white',$size)};
         &-cross{@include cross( $size , $subWhite , 2px)}
     }
     .dark{
@@ -75,6 +85,8 @@
         &-pen{@include pen('dark',$size)};
         &-plus{@include plus('dark',$size)};
         &-setting{@include setting('dark',$size)};
+        &-singleArrow{@include singleArrow('dark',$size)};
+        &-search{@include search('dark',$size)};
         &-cross{@include cross( $size , $baseBlue , 2px)}
     }
     .light{
@@ -87,6 +99,8 @@
         &-pen{@include pen('light',$size)};
         &-plus{@include plus('light',$size)};
         &-setting{@include setting('light',$size)};
+        &-singleArrow{@include singleArrow('light',$size)};
+        &-search{@include search('light',$size)};
         &-cross{@include cross( $size , $baseOrange , 2px)}
     }
     .gray{
@@ -99,6 +113,8 @@
         &-pen{@include pen('gray',$size)};
         &-plus{@include plus('gray',$size)};
         &-setting{@include setting('gray',$size)};
+        &-singleArrow{@include singleArrow('gray',$size)};
+        &-search{@include search('gray',$size)};
         &-cross{@include cross( $size , $subGray , 2px)}
     }
 }

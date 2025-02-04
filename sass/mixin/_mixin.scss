@@ -105,6 +105,14 @@
     background-image: url(../../img/icon/#{$color}-setting.png);
     @include iconSize($size);
 }
+@mixin singleArrow($color,$size){
+    background-image: url(../../img/icon/#{$color}-singleArrow.png);
+    @include iconSize($size);
+}
+@mixin search($color,$size){
+    background-image: url(../../img/icon/#{$color}-search.png);
+    @include iconSize($size);
+}
 // cross
 @mixin cols($line-width:2px,$color){
     height: 100%;
